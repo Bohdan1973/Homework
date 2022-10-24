@@ -1,0 +1,76 @@
+/* цвет основного текста  #000000  */
+/* вторичный цвет  color: rgba(0, 0, 0, 0.8); */
+/* Белый  color: #FFFFFF; */
+/* Акцент color: #18A0FB;  */
+/* Вторичный фон background: #F5F5F5; */
+:root {
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --tittle-text-color: #000000;
+    --accent-color: #18A0FB;
+    --primary-white-color: #ffffff;
+}
+
+.body {
+    background-color: #fff;
+    color: var(--primary-text-color);
+}
+.logo {
+    color:var(--tittle-text-color);
+}
+.logo:hover {
+    color:var(--accent-color);
+}
+
+
+/* Убирает в некоторых списках точки */
+.list {
+    list-style: none;
+}
+
+
+/* Site Nav */
+.site-nav .link {
+    color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--tittle-text-color);
+}
+
+.hero-tittle {
+color: var(--tittle-text-color);
+}
+
+
+/* Оформления текста секций */
+.section-tittle {
+    color:var(--tittle-text-color);
+}
+
+
+/* feature */
+.features .tittle {
+    color:var(--tittle-text-color);
+}
+
+
+
+/* Примеры работ */
+.work-list .tittle {
+    color:var(--tittle-text-color)
+}
+
+/* Button  */
+.button {
+    background-color: var(--tittle-text-color);
+    color: var(--primary-white-color) ;
+}
+
+.button.primary {
+    color: var(--primary-white-color);
+    background-color:var(--accent-color);
+}
+.button.secondary {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+}
