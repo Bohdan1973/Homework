@@ -10,12 +10,25 @@
     --primary-white-color: #ffffff;
 }
 
-.body {
-    background-color: #fff;
+body {
+    background-color:var(--primary-white-color);
     color: var(--primary-text-color);
+
+    font-family:Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 1.67;
 }
+
+
+/* Логотип */
 .logo {
     color:var(--tittle-text-color);
+    font-family: Comfortaa, cursive;
+
+    font-size: 28px;
+    line-height: 1.14;
+    text-decoration: none;
+
 }
 .logo:hover {
     color:var(--accent-color);
@@ -31,7 +44,14 @@
 /* Site Nav */
 .site-nav .link {
     color: var(--accent-color);
+    
+font-weight: 500;
+font-size: 15px;
+line-height: 1.2;
+text-decoration: none;
 }
+
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--tittle-text-color);
@@ -39,31 +59,48 @@
 
 .hero-tittle {
 color: var(--tittle-text-color);
+
+font-weight: 400;
+font-size: 56px;
+line-height: 1.43;
+text-align: center;
 }
 
 
 /* Оформления текста секций */
 .section-tittle {
     color:var(--tittle-text-color);
+
+font-weight: 400;
+font-size: 48px;
+line-height: 1.5;
+text-align: center;
+}
+
+.section-descr {
+    font-size: 36px;
+    line-height: 1.39;
 }
 
 
-/* feature */
-.features .tittle {
+/* feature + Примеры работ*/
+.features .tittle, .work-list .tittle {
     color:var(--tittle-text-color);
-}
 
-
-
-/* Примеры работ */
-.work-list .tittle {
-    color:var(--tittle-text-color)
+font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
 }
 
 /* Button  */
 .button {
     background-color: var(--tittle-text-color);
-    color: var(--primary-white-color) ;
+    color: var(--primary-white-color);
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    text-decoration: none;
 }
 
 .button.primary {
@@ -73,4 +110,6 @@ color: var(--tittle-text-color);
 .button.secondary {
     color: var(--accent-color);
     background-color: var(--primary-white-color);
+
+
 }
